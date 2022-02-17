@@ -116,15 +116,15 @@ void loop()
     // set connected to Arduino Pin to transmitter
     mySwitch.enableTransmit(tempInt);
 
-    tempInt = atoi(pulseLength);
-    // Serial.println(tempInt);
-    // Optional set pulse length.
-    mySwitch.setPulseLength(tempInt);
-
     tempInt = atoi(rfProtocolType);
     // Serial.println(tempInt);
     // set protocol.
     mySwitch.setProtocol(tempInt);
+    
+    tempInt = atoi(pulseLength);
+    // Serial.println(tempInt);
+    // Optional set pulse length.
+    mySwitch.setPulseLength(tempInt);
 
     tempInt = atoi(repeatIterations);
     // Serial.println(tempInt);
